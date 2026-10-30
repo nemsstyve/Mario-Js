@@ -1,0 +1,55 @@
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jeu Mario</title>
+    <link href="./images/favicon.png" rel="icon">
+    <link href="./images/apple-touch-icon.png" rel="apple-touch-icon">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: blanchedalmond;
+        }
+        
+        .button {
+            background-color: red;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<nav>
+    <a href="tonpere.html" class="button">Menu</a>
+    <audio src="Vincent Lagaf' - La Zoubida [Audio HQ].mp4"></audio>
+    <button>PLAY</button>
+    <button class="pause">||</button>
+    <script>
+        const playButton = document.querySelector("button");
+        const pauseButton = document.querySelector(".pause");
+        const monAudio = document.querySelector("audio");
+        playButton.addEventListener("click",
+            function() {
+                monAudio.play();
+            });
+        pauseButton.addEventListener("click",
+            function() {
+                monAudio.pause();
+            });
+    </script>
+</nav>
+
+<body>
+    <script src="https://kaboomjs.com/lib/0.5.0/kaboom.js"></script>
+    <script src="app3.js"></script>
+</body>
+
+</html>
